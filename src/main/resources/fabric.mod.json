@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "disable_lbm",
+  "version": "${version}",
+  "name": "DisableLBM",
+  "description": "Mod for Borza",
+  "authors": ["Trimsky"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/DisableLBM/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "name.trimsky.disable_lbm.client.DisableLBMClient"
+    ]
+  },
+  "mixins": [
+    "DisableLBM.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
